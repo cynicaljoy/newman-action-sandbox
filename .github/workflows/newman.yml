@@ -13,7 +13,7 @@ jobs:
       name: test
     steps:
       - id: newman
-        uses: cynicaljoy/newman-action@master
+        uses: matt-ball/newman-action@v0.2.3
         with:
           apiKey: ${{ secrets.POSTMAN_API_KEY }}
           collection: ${{ secrets.POSTMAN_COLLECTION_UID }}
